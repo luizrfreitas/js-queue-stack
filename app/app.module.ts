@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bullmq';
-import { ProducerModule } from 'features/queue-a/producer.module';
+import { QueueAModule } from 'features/queue-a/queue-a.module';
 
 @Module({
   imports: [
     BullModule.forRoot({ connection: { host: 'localhost', port: 6379 }}),
-    ProducerModule
+    QueueAModule
   ],
   controllers: [],
   providers: [],

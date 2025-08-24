@@ -1,0 +1,1 @@
+export const FIVE_SECONDS: number = 5000;
