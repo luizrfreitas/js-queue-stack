@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bullmq';
-import { ProducerController } from '../producer/producer.controller';
-import { ProducerModule } from '../producer/producer.module';
+import { ProducerModule } from 'features/queue-a/producer.module';
 
 @Module({
   imports: [
